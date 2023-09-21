@@ -3,8 +3,8 @@ import xml.etree.ElementTree as ET
 import json
 
 # Caminhos de entrada e saída
-caminho_entrada = 'fortalezaDB/Bilhetagem_Junho_2014/XML'
-caminho_saida = 'fortalezaDB/Bilhetagem_Junho_2014/JSON'
+caminho_entrada = 'jun_10_2014'
+caminho_saida = 'jun_10_2014'
 
 # Verifique se o diretório de saída existe e, se não, crie-o
 if not os.path.exists(caminho_saida):
@@ -47,6 +47,7 @@ for arquivo_xml in os.listdir(caminho_entrada):
         # Salvar o dicionário como JSON
         with open(caminho_arquivo_json, 'w', encoding='utf-8') as json_file:
             json.dump(data_dict, json_file, ensure_ascii=False, indent=4)
+            print("arquivo convertido")
 
 print("Conversão concluída.")
 

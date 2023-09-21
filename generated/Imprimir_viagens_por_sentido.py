@@ -17,16 +17,20 @@ try:
             viagens = movimento["Categoria"]["Empresa"][0]["Veiculo"]["Linha"]["Viagem"]
             
             for viagem in viagens:
-                data_abertura = viagem["data_hora_abertura"]
-                data_fechamento = viagem["data_hora_fechamento"]
                 sentido = viagem["sentido"]
-                passageiros = contar_passageiros(viagem)
+                if sentido == "0":
+                    data_abertura = viagem["data_hora_abertura"]
+                    data_fechamento = viagem["data_hora_fechamento"]
+                    sentido = viagem["sentido"]
+                    passageiros = contar_passageiros(viagem)
                 
-                print(f"Data de Abertura: {data_abertura}")
-                print(f"Data de Fechamento: {data_fechamento}")
-                print(f"sentido: {sentido}")
-                print(f"Passageiros na Viagem: {passageiros}")
-                print("-" * 40)
+                    print(f"Data de Abertura: {data_abertura}")
+                    print(f"Data de Fechamento: {data_fechamento}")
+                    print(f"sentido: {sentido}")
+                    print(f"Passageiros na Viagem: {passageiros}")
+                    print("-" * 40)
+
+                             
 
 except FileNotFoundError:
     print(f"O arquivo {file_path} não foi encontrado.")

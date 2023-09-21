@@ -1,0 +1,53 @@
+{
+    "Movimentos": { 
+        "MovimentoDiario": [
+            { 
+                "Categoria": {
+                    "Empresa": [
+                        {    
+                            "Veiculo": {
+                                "Linha": {
+                                    "Viagem":[
+                                        {
+                                            "Passageiro":[
+                                                {
+                                                    "Matricula": "+JPziB0w6Yc",
+                                                    "tipo": "12",
+                                                    "data_hora": "2014-06-23T05:46:10",
+                                                    "valor_pago": "2.2",
+                                                    "integração": "0",
+                                                    "sigben": "0"
+                                                }
+                                            ],
+                                            "data_hora_abertura": "2014-06-23T05:35:45",
+                                            "data_hora_fechamento": "2014-06-23T06:34:11",
+                                            "catraca_inicio": "65321",
+                                            "catraca_final": "65364",
+                                            "sentido": "1",
+                                            "text": "\n       "                                        
+                                        }
+                                    ],
+                                    "Numero": "42",
+                                    "tabela": "9",
+                                    "_text": "\n     "           
+                                },
+                                "Numero": "2929",
+                                "validador": "835H",
+                                "_text": "\n    "                             
+                            },
+                            "Codigo": "002",
+                            "modalidade": "1",
+                            "_text": "\n   "  
+                        }
+                    ],
+                    "Tipo": "1",
+                    "_text": "\n  "            
+                },
+                "data_mov": "2014-06-23",
+                "_text": "\n  "  
+            }
+        ],
+        "data_arq": "2014-06-30",
+        "_text": "\n "    
+    }
+}
