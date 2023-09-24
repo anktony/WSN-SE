@@ -1,7 +1,7 @@
 import json
 
 # Caminho para o arquivo JSON de entrada
-input_file_path = "jun_10_2014/linha_24_sentido_0.json"
+input_file_path = "jun_10_2014/linha_920/linha_920_sentido_1.json"
 
 # Carregar o arquivo JSON
 with open(input_file_path, 'r') as json_file:
@@ -11,7 +11,7 @@ with open(input_file_path, 'r') as json_file:
 data_sorted = sorted(data, key=lambda x: x["data_hora_abertura"])
 
 # Caminho para o arquivo JSON de saída (arquivo ordenado)
-output_file_path = "jun_10_2014/linha_24_sentido_0_ordenado.json"
+output_file_path = "jun_10_2014/linha_920/linha_920_sentido_1_ordenado.json"
 
 # Salvar as viagens ordenadas em um novo arquivo JSON
 with open(output_file_path, 'w') as output_file:
